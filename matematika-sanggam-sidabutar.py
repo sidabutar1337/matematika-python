@@ -1,8 +1,8 @@
 import os
 import datetime 
 
-def cmd():
-    func = os.system()
+def cmd(command):
+    func = os.system(command)
     return func
 def date():
     func = datetime.datetime.now()
@@ -30,7 +30,7 @@ def start():
                         tanggal = waktu.strftime('%d')
                         bulan = waktu.strftime('%B')
                         tahun = waktu.strftime('%Y')
-                        print(tanggal,tahun,bulan)
+                        print(tanggal,bulan,tahun)
                         angka = int(input('input angka pertama: '))
                         angka2 = int(input('input angka kedua: '))
                         operator = input('ketik nama operator: ')
